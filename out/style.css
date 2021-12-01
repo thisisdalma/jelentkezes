@@ -1,3 +1,109 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  background-color: #fff257;
+  position: relative;
+}
 
+#burger {
+  box-sizing: content-box;
+  background-color: black;
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 25px 20px;
+  position: absolute;
+  cursor: pointer;
+  right: 20px;
+  top: 20px;
+}
+
+#burger div {
+  background-color: white;
+  width: 40px;
+  height: 6px;
+  margin-bottom: 6px;
+}
+
+#container {
+  margin: 0px auto;
+  max-width: 500px;
+}
+
+h1 {
+  color: #138073;
+  letter-spacing: 0.05em;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 26px;
+}
+
+#text-input {
+  font-family: "Open Sans", sans-serif;
+  margin: 20px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 60px 60px 60px;
+}
+
+.text-input-border {
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+
+#message {
+  padding-bottom: 100px;
+  height: 140px;
+}
+
+::placeholder {
+  color: #39b69f;
+  font-size: 12px;
+}
+
+.cb, .submit {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #138073;
+}
+
+.cb {
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+}
+
+.submit button {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 20px 80px;
+  margin-top: 25px;
+  background-color: #39b69f;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+  #burger {
+    transform: scale(0.7);
+  }
+
+  #container {
+    max-width: 90%;
+  }
+
+  h1 {
+    text-align: right;
+  }
+
+  .cb {
+    text-align: left;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

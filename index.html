@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./out/style.css">
     <title>Jelentkezes</title>
 </head>
-<body>    
-    
+<body>   
+    <nav> 
+        <div id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <div id="container">
+        <h1>Jelentkezés</h1>
+        <form>
+            <div id="text-input">
+                <input type="text" class="text-input-border" placeholder="Címzett neve">
+                <input type="text" class="text-input-border" id="message" placeholder="Üzenet">
+            </div>
+            <div class="cb">
+                <input type="checkbox" id="read-terms">
+                <label for="read-terms">Elolvastam és elfogadom az <a href="#">Adatkezelési Tájékoztatót.</label>
+                </div>
+            <div class="submit">
+                <button type="submit" class="btn btn-success">Elküld</button>
+            </div>
+        </form>
 </body>
 </html>
